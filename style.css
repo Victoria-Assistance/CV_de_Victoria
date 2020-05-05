@@ -1,0 +1,420 @@
+#conteneur
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+
+div.element
+{
+
+}
+
+@font-face 
+{
+	font-family: 'action_man-webfont';
+	src: url('action_man-webfont.woff') format('woff'),
+		url('action_man-webfont.eot') format('eot'),
+		url('action_man-webfont.svg') format('svg'),
+		url('action_man-webfont.ttf') format('ttf');
+
+	font-family: 'action_man_shaded';
+	src: url('action_man_shaded-webfont.woff') format('woff'),
+		url('action_man_shaded-webfont.eot') format('eot'),
+		url('action_man_shaded-webfont.svg') format('svg'),
+		url('action_man_shaded-webfont.ttf') format('ttf');
+}
+
+body 
+{
+	margin: 0px;
+}
+
+
+/*En-tête*/
+
+
+header
+{
+	padding: 5px;
+	text-align:center;
+	font-family: 'action_man-webfont', Comic Sans MS;
+
+}
+
+header span
+{
+	color : #EC407A;
+}
+
+.soulign
+{
+	text-decoration: underline #EC407A;
+}
+
+/*Présentation générale*/
+
+.containt
+{
+	border: 3px solid #EC407A;
+}
+
+p
+{
+	margin:0px;
+	padding:5px;
+}
+
+
+/*Formation, Expériences professionnelles et recommandations (partie droite)*/
+
+.column_right_section
+{
+	text-align: justify;
+}
+
+.icons /*CSS pour font awesome*/
+{
+	padding: 15px;
+	color: #EC407A;
+}
+
+.conteneur /*Titre des rubriques*/
+{
+	display:flex;
+	flex-direction: row;
+	border-top: 3px #26C6DA solid;
+	border-bottom: 3px #26C6DA solid ;
+	margin-top: 25px;
+	margin-bottom: 25px;
+	font-size: medium;	
+	font-family:'action_man_shaded', Comic Sans MS;	
+}
+
+article/*sous-rubrique entière*/
+{
+	display: flex;
+	flex-direction: row;
+	padding: 20px;
+}
+
+/*Partie gauche de la partie Formation, Expériences professionnelles et recommandations*/
+
+.column_left
+{
+	display: flex;
+	width: 50%;
+	flex-direction: row;
+	padding-top: 30px;	
+	padding-right:20px;
+	height: 30px;
+}
+
+.date_et_lieu
+{
+	padding-left: 20px;
+	padding-top: 15px;
+}	
+
+/*Partie droite de la partie Formation, Expériences professionnelles et recommandations*/	
+
+.column_right
+{
+	padding-top:40px;
+	text-align: justify;
+	width: 50%;
+}
+
+.intitule
+{
+	font-weight: bold;
+	font-size: 18px;
+}
+
+
+/*Sous-rubrique Recommandations*/
+		
+.conteneur_recommandations
+{
+	display:flex;
+	justify-content: space-around;
+	padding-bottom: 30px;
+	padding-left:80px;
+}
+
+
+
+/* Partie gauche : Photo, contact, à propos de moi, loisirs*/
+
+/*Présentation générale de la partie de gauche*/
+
+.column_left_aside
+{		
+background-color: #EC407A;
+}
+
+h3
+{
+	color:black;
+	background-color: #26C6DA;
+	text-align : center;
+	width: auto;
+	font-size: 20px;
+	padding: 5px;
+	margin:0px;
+	margin-bottom: 10px;
+	margin-top: 20px;
+}
+
+
+/*Photo de moi*/
+
+.image_profil
+{
+	margin-left: auto;
+	margin-right: auto;
+	width: 10em;
+	padding-top: 30px;
+}
+
+img
+{
+	border-radius: 100px / 100px;
+}
+
+/*Contact*/
+		
+.adresse_tel
+{
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction : row;
+	justify-content: space-around;
+	padding: 20px;
+}
+
+.contact_internet
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	padding: 20px;
+}
+
+
+
+/*A propos de moi*/
+
+
+.apropos
+{
+	display:flex;			
+	text-align: justify; 
+	padding: 10px;
+	margin: 10px;
+}
+
+/*Loisirs*/
+
+.loisirs
+{
+	display:flex;
+	flex-direction : row;
+	justify-content: space-around;
+	padding:20px;
+}
+
+.logos
+{
+	border: 2px black solid;
+	border-radius:40px/40px;
+	font-size: 12px;
+	padding:8px;
+}
+
+
+/* Nouvelles règles si la fenêtre fait entre 768px et 991.98px*/
+@media (min-width: 768px) and (max-width: 1200px)
+{
+
+.containt
+{
+	border: 1px #EC407A solid;
+}
+
+header
+{
+	font-size: x-large;
+}
+
+.conteneur
+{
+	border-bottom: 1px #EC407A dotted;
+	border-top: 1px white solid;
+}
+
+
+h3
+{
+	color:black;
+	background-color: #26C6DA;
+	text-align : center;
+	width: auto;
+	font-size: 26px;
+}
+
+.column_right
+{
+	padding-top:40px;
+}
+
+p
+{
+	font-size:22px;
+}
+
+.conteneur_recommandations
+{
+	font-size:22px;
+}
+
+h2
+{
+	font-size:30px;
+}
+}
+
+/* Nouvelles règles si la fenêtre fait entre 992px et 1199.98px*/
+@media (min-width: 1200px)
+{
+
+.containt
+{
+	display: flex;
+	flex-direction: row-reverse;
+	border: 1px grey solid;
+	margin: auto;
+	width: 1300px;
+}
+
+header
+{
+	text-align: left;
+	font-size: x-large;	
+}
+
+header span
+{
+	color : #EC407A;
+}
+
+header p
+{
+	font-weight:bold;
+}
+
+.conteneur
+{
+	border-bottom : 1px #EC407A solid;
+	border-top: 0px white solid;
+}
+
+.column_right_section
+{
+	padding: 70px;
+	border : 10px, black, solid;
+}
+
+.icons
+{
+	padding-right:8px;
+}
+
+.column_left
+{
+	display: flex;
+	width: 30%;
+	padding-top: 0px;
+	flex-direction: row;
+}
+
+.column_right
+{
+	width:70%;
+	padding-left: 100px;
+	margin:0px;
+	padding-top: 12px;
+}
+
+.conteneur_recommandations
+{
+	display: flex;
+	justify-content: space-between;
+}
+
+.column_left_aside
+{	
+	display: flex;
+	flex-direction: column;
+	width : 40%;
+}
+
+.adresse_tel
+{
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction : column;
+	padding: 10px;
+}
+
+.contact_internet
+{
+	display: flex;
+	flex-direction: column;
+	padding: 10px;
+}
+
+.adresse
+{
+	padding-left:25px;
+}
+
+.telephone
+{
+	padding-top : 20px;
+	padding-left:25px;
+}
+
+.email
+{
+	padding-left:25px;
+}
+
+.site
+{
+	padding-top : 20px;
+	padding-left:25px;
+}
+
+.skype
+{
+	padding-top : 20px;
+	padding-left:25px;
+}
+
+.apropos
+{
+	flex:2;
+	padding-left:25px;
+	padding-right: 25px;
+	margin:0px;
+}
+	
+.loisirs
+{
+	display:flex;
+	padding-bottom: 20px;
+}
+
+}
