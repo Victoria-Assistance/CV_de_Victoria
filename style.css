@@ -35,12 +35,16 @@ body
 /*En-tête*/
 
 
+h1
+{
+	padding : 0px;
+	margin:0px;
+}
 header
 {
 	padding: 5px;
 	text-align:center;
 	font-family: 'action_man-webfont', Comic Sans MS;
-
 }
 
 header span
@@ -60,10 +64,16 @@ header span
 	border: 3px solid #EC407A;
 }
 
+h2
+{
+	font-size:28px;
+}
+
 p
 {
 	margin:0px;
 	padding:5px;
+	font-size:18px;
 }
 
 
@@ -74,20 +84,35 @@ p
 	text-align: justify;
 }
 
+.iconsi
+{
+	padding-top: 20px;
+	padding-right: 20px;
+	color: #EC407A;
+}
 .icons /*CSS pour font awesome*/
 {
-	padding: 15px;
+	padding-top: 20px;
+	padding-right: 10px;
 	color: #EC407A;
+}
+
+.icons2
+{
+	padding-top: 24px;
+	padding-right: 10px;
+	color: #EC407A;
+	font-size: 9px;
 }
 
 .conteneur /*Titre des rubriques*/
 {
 	display:flex;
 	flex-direction: row;
-	border-top: 3px #26C6DA solid;
-	border-bottom: 3px #26C6DA solid ;
-	margin-top: 25px;
-	margin-bottom: 25px;
+	border-bottom: 3px #EC407A solid ;
+	padding:0px;
+	margin-top:10px;
+	margin-bottom: 20px;
 	font-size: medium;	
 	font-family:'action_man_shaded', Comic Sans MS;	
 }
@@ -96,7 +121,6 @@ article/*sous-rubrique entière*/
 {
 	display: flex;
 	flex-direction: row;
-	padding: 20px;
 }
 
 /*Partie gauche de la partie Formation, Expériences professionnelles et recommandations*/
@@ -104,32 +128,36 @@ article/*sous-rubrique entière*/
 .column_left
 {
 	display: flex;
-	width: 50%;
+	width: 30%;
 	flex-direction: row;
-	padding-top: 30px;	
+	padding-top: 15px;	
+	padding-left:10px;
 	padding-right:20px;
 	height: 30px;
 }
 
 .date_et_lieu
 {
-	padding-left: 20px;
-	padding-top: 15px;
+	padding-left: 5px;
+	padding-top: 20px;
+	text-align:left;
 }	
 
 /*Partie droite de la partie Formation, Expériences professionnelles et recommandations*/	
 
 .column_right
 {
-	padding-top:40px;
-	text-align: justify;
-	width: 50%;
+	padding-top:25px;
+	padding-left:9px;
+	padding-right:9px;
+	text-align: left;
+	width: 70%;
 }
 
 .intitule
 {
 	font-weight: bold;
-	font-size: 18px;
+	font-size: 22px;
 }
 
 
@@ -138,12 +166,21 @@ article/*sous-rubrique entière*/
 .conteneur_recommandations
 {
 	display:flex;
-	justify-content: space-around;
-	padding-bottom: 30px;
-	padding-left:80px;
+	justify-content: center;
+	padding-top:5px;
+	padding-bottom: 20px;
+	text-align:center;
 }
 
+.recommandation_loic
+{
+	padding-right:20px;
+}
 
+.recommandation_vch
+{
+	padding-left:20px;
+}
 
 /* Partie gauche : Photo, contact, à propos de moi, loisirs*/
 
@@ -151,7 +188,7 @@ article/*sous-rubrique entière*/
 
 .column_left_aside
 {		
-background-color: #EC407A;
+	background-color: #EC407A;
 }
 
 h3
@@ -185,35 +222,52 @@ img
 
 /*Contact*/
 		
-.adresse_tel
+.contact
 {
 	display: flex;
-	flex-wrap: wrap;
-	flex-direction : row;
-	justify-content: space-around;
-	padding: 20px;
+	flex-direction: column;
+	text-align: center;
 }
 
-.contact_internet
+.adresse
 {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-around;
-	padding: 20px;
+	padding:10px;
 }
 
+.telephone
+{
+	padding: 10px;
+}
+
+.email
+{
+	padding: 10px;
+}
+
+.site
+{
+	padding: 10px;
+}
+
+.skype
+{
+	padding: 10px;
+}
 
 
 /*A propos de moi*/
 
-
 .apropos
 {
-	display:flex;			
+	flex:2;
 	text-align: justify; 
 	padding: 10px;
 	margin: 10px;
+	padding-left:25px;
+	padding-right: 25px;
+	margin:0px;
 }
+
 
 /*Loisirs*/
 
@@ -223,6 +277,7 @@ img
 	flex-direction : row;
 	justify-content: space-around;
 	padding:20px;
+	padding-bottom: 20px;
 }
 
 .logos
@@ -298,6 +353,11 @@ h2
 	width: 1300px;
 }
 
+.section
+{
+	width: 66%;
+}
+
 header
 {
 	text-align: left;
@@ -313,6 +373,7 @@ header p
 {
 	font-weight:bold;
 }
+
 
 .conteneur
 {
@@ -357,56 +418,52 @@ header p
 {
 	display: flex;
 	justify-content: space-between;
+	text-align: left;
 }
 
 .column_left_aside
 {	
 	display: flex;
 	flex-direction: column;
-	width : 40%;
+	width : 34%;
 }
 
-.adresse_tel
+	
+
+.contact
 {
-	display: flex;
-	flex-wrap: wrap;
-	flex-direction : column;
-	padding: 10px;
+	text-align: left;
 }
 
-.contact_internet
-{
-	display: flex;
-	flex-direction: column;
-	padding: 10px;
-}
 
 .adresse
 {
-	padding-left:25px;
+	padding-top: 10px;
+	padding-left: 25px;
 }
 
 .telephone
 {
-	padding-top : 20px;
-	padding-left:25px;
+	padding-top: 10px;
+	padding-left: 25px;
 }
 
 .email
 {
-	padding-left:25px;
+	padding-top: 10px;
+	padding-left: 25px;
 }
 
 .site
 {
-	padding-top : 20px;
-	padding-left:25px;
+	padding-top : 10px;
+	padding-left: 25px;
 }
 
 .skype
 {
-	padding-top : 20px;
-	padding-left:25px;
+	padding-top: 10px;
+	padding-left: 25px;
 }
 
 .apropos
