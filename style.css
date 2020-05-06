@@ -71,7 +71,7 @@ h2
 
 p
 {
-	margin:0px;
+	margin: auto;
 	padding:5px;
 	font-size:18px;
 }
@@ -86,21 +86,22 @@ p
 
 .iconsi
 {
-	padding-top: 20px;
+	padding-left: 10px;
 	padding-right: 20px;
+	padding-top: 20px;
 	color: #EC407A;
 }
 .icons /*CSS pour font awesome*/
 {
+	padding-left: 10px;
 	padding-top: 20px;
-	padding-right: 10px;
 	color: #EC407A;
 }
 
 .icons2
 {
+	padding-left: 10px;
 	padding-top: 24px;
-	padding-right: 10px;
 	color: #EC407A;
 	font-size: 9px;
 }
@@ -110,7 +111,7 @@ p
 	display:flex;
 	flex-direction: row;
 	border-bottom: 3px #EC407A solid ;
-	padding:0px;
+	padding:10px;
 	margin-top:10px;
 	margin-bottom: 20px;
 	font-size: medium;	
@@ -120,7 +121,8 @@ p
 article/*sous-rubrique entière*/
 {
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
+	padding-right : 75px;
 }
 
 /*Partie gauche de la partie Formation, Expériences professionnelles et recommandations*/
@@ -128,37 +130,33 @@ article/*sous-rubrique entière*/
 .column_left
 {
 	display: flex;
-	width: 30%;
+	width: 100%;
 	flex-direction: row;
-	padding-top: 15px;	
-	padding-left:10px;
-	padding-right:20px;
-	height: 30px;
+	height: 60px;
+	justify-content:left;
+	padding-bottom: 10px;
 }
 
 .date_et_lieu
 {
-	padding-left: 5px;
 	padding-top: 20px;
-	text-align:left;
+	text-align:justify;
+	margin:0px;
+	font-weight: bold;
+	font-size: 18px;
+	padding-left: 30px;
 }	
 
 /*Partie droite de la partie Formation, Expériences professionnelles et recommandations*/	
 
 .column_right
 {
-	padding-top:25px;
-	padding-left:9px;
-	padding-right:9px;
-	text-align: left;
-	width: 70%;
+	width: 100%;
+	text-align: justify;
+	padding-left:50px;
 }
 
-.intitule
-{
-	font-weight: bold;
-	font-size: 22px;
-}
+
 
 
 /*Sous-rubrique Recommandations*/
@@ -309,6 +307,11 @@ header
 	border-top: 1px white solid;
 }
 
+article/*sous-rubrique entière*/
+{
+	display: flex;
+	flex-direction: row;
+}
 
 h3
 {
@@ -322,6 +325,12 @@ h3
 .column_right
 {
 	padding-top:40px;
+}
+
+.intitule
+{
+	font-weight: bold;
+	font-size: 22px;
 }
 
 p
@@ -338,6 +347,18 @@ h2
 {
 	font-size:30px;
 }
+
+.column_left
+{
+	display: flex;
+	width: 100%;
+	flex-direction: row;
+	padding-top: 15px;	
+	padding-left:10px;
+	padding-right:20px;
+	height: 30px;
+}
+
 }
 
 /* Nouvelles règles si la fenêtre fait entre 992px et 1199.98px*/
@@ -387,9 +408,32 @@ header p
 	border : 10px, black, solid;
 }
 
+article
+{
+	display: flex;
+	flex-direction: row;
+}
+
+
+.iconsi
+{
+	padding-top: 20px;
+	padding-right: 20px;
+	color: #EC407A;
+}
 .icons
 {
-	padding-right:8px;
+	padding-top: 20px;
+	padding-right: 10px;
+	color: #EC407A;
+}
+
+.icons2
+{
+	padding-top: 24px;
+	padding-right: 10px;
+	color: #EC407A;
+	font-size: 9px;
 }
 
 .column_left
@@ -398,6 +442,7 @@ header p
 	width: 30%;
 	padding-top: 0px;
 	flex-direction: row;
+	justify-content: flex-start;
 }
 
 .column_right
@@ -409,10 +454,18 @@ header p
 	text-align: left;
 }
 
+.intitule
+{
+	font-weight: bold;
+	font-size: 22px;
+}
+
 .date_et_lieu
 {
-	text-align: left;
-}
+	padding-left: 5px;
+	padding-top: 20px;
+	text-align:left;
+}	
 
 .conteneur_recommandations
 {
