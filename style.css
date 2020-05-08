@@ -50,6 +50,7 @@ h1
 {
 	padding : 0px;
 	margin:0px;
+	font-size: 28px;
 }
 
 .soulign
@@ -66,7 +67,7 @@ h1
 
 h2
 {
-	font-size:28px;
+	font-size:26px;
 }
 
 p
@@ -86,9 +87,10 @@ p
 
 .iconsi
 {
-	padding-left: 10px;
-	padding-right: 20px;
-	padding-top: 20px;
+	padding-left: 0px;
+	padding-right: 10px;
+	padding-top: 25px;
+	font-size: 25px ;
 	color: #EC407A;
 }
 
@@ -110,7 +112,6 @@ article/*sous-rubrique entière*/
 {
 	display: flex;
 	flex-direction: column;
-	padding-right : 75px;
 }
 
 .icons /*CSS pour font awesome*/
@@ -143,7 +144,7 @@ article/*sous-rubrique entière*/
 .date_et_lieu
 {
 	padding-top: 20px;
-	text-align:justify;
+	text-align:left;
 	margin:0px;
 	font-weight: bold;
 	font-size: 18px;
@@ -155,8 +156,13 @@ article/*sous-rubrique entière*/
 .column_right
 {
 	width: 100%;
-	text-align: justify;
-	padding-left:50px;
+	text-align: left;
+	padding-left: 10px;
+}
+
+.description
+{
+	padding-right: 10px;
 }
 
 
@@ -167,20 +173,23 @@ article/*sous-rubrique entière*/
 .conteneur_recommandations
 {
 	display:flex;
+	flex-direction: column;
 	justify-content: center;
 	padding-top:5px;
-	padding-bottom: 20px;
 	text-align:center;
+	padding-bottom: 20px;
 }
 
 .recommandation_loic
 {
-	padding-right:20px;
+	text-align: center;
+	padding-bottom: 20px;
+
 }
 
 .recommandation_vch
 {
-	padding-left:20px;
+	text-align: center;
 }
 
 /* Partie gauche : Photo, contact, à propos de moi, loisirs*/
@@ -312,6 +321,7 @@ h3
 
 .column_right
 {
+	width: 50%;
 	padding-top:40px;
 }
 
@@ -320,6 +330,10 @@ h3
 	font-weight: bold;
 	font-size: 22px;
 }
+.date_et_lieu
+{
+	font-size: 22px;
+}	
 
 p
 {
@@ -329,6 +343,9 @@ p
 .conteneur_recommandations
 {
 	font-size:22px;
+	flex-direction: row;
+	justify-content: space-around;
+	padding-left:70px;
 }
 
 h2
@@ -339,9 +356,9 @@ h2
 .column_left
 {
 	display: flex;
-	width: 100%;
+	width: 50%;
 	padding-top: 15px;	
-	padding-left:10px;
+	padding-left:50px;
 	padding-right:20px;
 	height: 30px;
 }
@@ -367,15 +384,22 @@ h2
 
 header
 {
+	padding-top: 40px;
 	text-align: left;
-	font-size: x-large;	
+	font-size: 20px;	
+	display: flex;
+	flex-direction: column;
+	padding-bottom: 40px;
 }
 
-
+p
+{
+	margin:0px;
+}
 
 .column_right_section
 {
-	padding: 70px;
+	padding-left: 70px;
 	border : 10px, black, solid;
 	width: 66%;
 }
@@ -436,6 +460,16 @@ article
 {
 	display: flex;
 	justify-content: space-between;
+	flex-direction: row;
+	text-align: left;
+}
+.recommandation_loic
+{
+	text-align: left;
+}
+
+.recommandation_vch
+{
 	text-align: left;
 }
 
