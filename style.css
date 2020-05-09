@@ -101,9 +101,10 @@ section
 	display:flex;
 	flex-direction: row;
 	border-bottom: 1px #EC407A solid ;
-	padding:10px;
-	margin-top:10px;
+	padding-left:10px;
+	margin-top:15px;
 	margin-bottom: 20px;
+	margin-right: 15px;
 	font-size: medium;	
 	font-family:'action_man_shaded', Comic Sans MS;
 }
@@ -402,8 +403,7 @@ section
 {
 	padding-left: 70px;
 	border : 10px, black, solid;
-	width: 67%;
-	margin-right: 10px;
+	margin-right: 0px;
 }
 
 article
