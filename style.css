@@ -112,18 +112,19 @@ article/*sous-rubrique entière*/
 {
 	display: flex;
 	flex-direction: column;
+	padding-right: 10px;
 }
 
 .icons /*CSS pour font awesome*/
 {
-	padding-left: 10px;
+	padding-left: 40px;
 	padding-top: 20px;
 	color: #EC407A;
 }
 
 .icons2
 {
-	padding-left: 10px;
+	padding-left: 40px;
 	padding-top: 24px;
 	color: #EC407A;
 	font-size: 9px;
@@ -148,7 +149,7 @@ article/*sous-rubrique entière*/
 	margin:0px;
 	font-weight: bold;
 	font-size: 18px;
-	padding-left: 30px;
+	padding-left: 20px;
 }	
 
 /*Partie droite de la partie Formation, Expériences professionnelles et recommandations*/	
@@ -156,7 +157,7 @@ article/*sous-rubrique entière*/
 .column_right
 {
 	width: 100%;
-	text-align: left;
+	text-align: justify;
 	padding-left: 10px;
 }
 
@@ -417,12 +418,14 @@ article
 }
 .icons
 {
+	padding-left:0px;
 	padding-top: 20px;
 	padding-right: 10px;
 }
 
 .icons2
 {
+	padding-left:0px;
 	padding-top: 24px;
 	padding-right: 10px;
 	font-size: 9px;
