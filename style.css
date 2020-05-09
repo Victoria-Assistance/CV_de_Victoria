@@ -38,7 +38,7 @@ header
 {
 	padding: 5px;
 	text-align:center;
-	font-family: 'action_man-webfont', Comic Sans MS;
+	font-family: 'action_man-webfont', 'Comic Sans MS';
 }
 
 header span
@@ -106,7 +106,7 @@ section
 	margin-bottom: 20px;
 	margin-right: 15px;
 	font-size: medium;	
-	font-family:'action_man_shaded', Comic Sans MS;
+	font-family:'action_man_shaded', 'Comic Sans MS';
 }
 
 article/*sous-rubrique entière*/
@@ -229,7 +229,7 @@ h3
 
 img
 {
-	border-radius: 100px / 100px;
+	border-radius: 100px/100px;
 }
 
 /*Contact*/
@@ -402,7 +402,7 @@ p
 section
 {
 	padding-left: 70px;
-	border : 10px, black, solid;
+	border : 10px black solid;
 	margin-right: 0px;
 }
 
